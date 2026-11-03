@@ -12,7 +12,7 @@ Diferentemente das plataformas tradicionais, o vídeo e o áudio são transmitid
 
 ## 📥 Download
 
-**[⬇ Baixar a versão mais recente](LINK_DO_RELEASE)**
+**[⬇ Baixar a versão mais recente](https://github.com/ThomasArielxl/screenlink-releases/releases)**
 
 ### Como instalar
 
