@@ -1,111 +1,237 @@
-ScreenLink
-Compartilhamento de tela em sala, direto entre os participantes, feito para ser um complemento ao Discord.
-![Versão](https://img.shields.io/github/v/release/ThomasArielxl/screenlink-releases?label=vers%C3%A3o&color=5ec2a8)
-![Plataforma](https://img.shields.io/badge/plataforma-Windows%2010%2F11-blue)
-O ScreenLink cria uma sala com um código de 5 caracteres. Quem entra pode transmitir a própria tela, assistir às transmissões dos outros e conversar por texto. O vídeo e o áudio vão direto de um PC para o outro, sem passar por um servidor de vídeo. Você mantém a conversa de voz no Discord e usa o ScreenLink só para a imagem, com mais qualidade e controle.
+# ScreenLink
+
+**Compartilhamento de tela em tempo real, direto entre os participantes.**
+
+O ScreenLink é um aplicativo de compartilhamento de tela em salas privadas, desenvolvido para funcionar como complemento ao Discord.
+
+Crie uma sala, compartilhe um código de 5 caracteres com seus amigos e comece a transmitir sua tela. Os participantes podem assistir às transmissões uns dos outros e conversar pelo chat integrado.
+
+Diferentemente das plataformas tradicionais, o vídeo e o áudio são transmitidos diretamente entre os computadores dos participantes, sem passar por um servidor central de vídeo. Assim, você pode continuar usando o Discord para conversar por voz e deixar o ScreenLink responsável apenas pelo compartilhamento de tela.
+
 ---
-Baixar
-⬇ Baixar a versão mais recente
-Abra o link acima e, na seção Assets, clique em `ScreenLink-Setup-X.X.X.exe`.
-Execute o arquivo baixado e siga o instalador.
-Abra o ScreenLink pelo atalho da área de trabalho ou do menu Iniciar.
-Não é preciso instalar mais nada. Depois da primeira instalação, o programa se atualiza sozinho.
-> **Aviso do Windows:** o instalador ainda não tem assinatura digital, então o Windows pode mostrar "O Windows protegeu seu computador". Clique em **Mais informações** e depois em **Executar assim mesmo**.
+
+## 📥 Download
+
+**[⬇ Baixar a versão mais recente](LINK_DO_RELEASE)**
+
+### Como instalar
+
+1. Abra o link acima e acesse a seção **Assets** da versão mais recente.
+2. Baixe o arquivo `ScreenLink-Setup-X.X.X.exe`.
+3. Execute o instalador e siga as instruções.
+4. Abra o ScreenLink pelo atalho na área de trabalho ou pelo menu Iniciar.
+
+Não é necessário instalar nenhum outro programa. Após a primeira instalação, o ScreenLink verifica, baixa e instala atualizações automaticamente.
+
+> **Aviso do Windows:** O instalador ainda não possui assinatura digital. Por isso, o Windows pode exibir o aviso "O Windows protegeu seu computador". Clique em **Mais informações** e depois em **Executar assim mesmo** para continuar.
+
 ---
-Principais recursos
-Sala
-Código de 5 caracteres. Um participante cria a sala e envia o código pelo Discord. Os outros digitam o código e entram.
-Até 6 pessoas por sala.
-Chat de texto dentro da sala, com aviso de quem entra e sai.
-Ping de cada participante na lista e em cada transmissão, para você saber como está a conexão.
-A sala continua enquanto houver alguém dentro. Se quem criou sair, outro participante assume.
-Compartilhar tela
-Qualquer pessoa da sala pode transmitir. Ao clicar em Compartilhar tela, abre uma página de ajustes com:
-Ajuste	Opções
-Fonte	Tela inteira ou um aplicativo específico aberto
-Resolução	Até 1080p: 1080p, 720p, 480p, 360p, 240p e 144p
-FPS	24, 30 ou 60 FPS
-Bitrate	De 1 a 40 Mbps, ajustável ao vivo
-Codec	Automático (recomendado) ou escolha manual
-A transmissão só começa quando você clica em Iniciar transmissão. Você pode mudar fonte, resolução, FPS e bitrate durante a transmissão, sem os espectadores precisarem reconectar.
-Assistir
-Quem está transmitindo aparece na lista de participantes com o botão Assistir.
-O vídeo só é enviado para quem clica em Assistir, o que poupa a internet de quem transmite.
-Cada transmissão aceita até 5 espectadores ao mesmo tempo.
-Dá para assistir a várias transmissões ao mesmo tempo.
-Controles de volume, ping e Parar de assistir aparecem ao passar o mouse sobre o vídeo e somem sozinhos.
-Clique duplo no vídeo para tela cheia.
-Áudio
-Transmite somente o som do sistema. O microfone nunca é capturado.
-Ao compartilhar a tela inteira, vai o som de todo o sistema.
-Ao compartilhar um aplicativo, vai somente o som daquele aplicativo. O resto, como o Discord, fica de fora.
-Codec automático e baixo consumo
-Ao abrir, o programa testa o seu hardware e escolhe o melhor codec:
-NVIDIA (NVENC), AMD (AMF/VCN) e Intel (Quick Sync) são aproveitados por meio do Windows.
-A ordem de preferência com aceleração por hardware é AV1, H.265, H.264 e VP9.
-Sem aceleração por hardware, o programa usa H.264 por software, que é o mais leve para o processador.
-O codec também leva em conta o que o PC de quem assiste decodifica com pouco esforço, para evitar tela preta e uso excessivo de processador.
-Na página de ajustes você vê o resultado, por exemplo: `AV1: hardware | H265: hardware | H264: hardware`.
-Atualização automática
-O programa verifica por versões novas sozinho, baixa em segundo plano e avisa no canto da tela. Basta clicar em Reiniciar e atualizar, ou ele atualiza quando você fecha o programa.
+
+## ✨ Principais recursos
+
+### 🏠 Salas compartilhadas
+
+- Salas identificadas por códigos de 5 caracteres.
+- Até **6 participantes simultâneos** por sala.
+- Qualquer participante pode compartilhar a própria tela.
+- Chat de texto integrado, com notificações de entrada e saída.
+- Indicador de ping para cada participante e transmissão.
+- A sala permanece ativa enquanto houver alguém conectado.
+- Se o criador sair, outro participante assume automaticamente a administração da sala.
+
+### 🖥️ Compartilhamento de tela
+
+Qualquer participante pode iniciar uma transmissão com configurações personalizadas:
+
+| Configuração | Opções |
+|---|---|
+| Fonte | Tela inteira ou aplicativo específico |
+| Resolução | 1080p, 720p, 480p, 360p, 240p ou 144p |
+| FPS | 24, 30 ou 60 |
+| Bitrate | De 1 a 40 Mbps |
+| Codec | Automático ou seleção manual |
+
+A transmissão só começa quando você clica em **Iniciar transmissão**.
+
+As configurações de fonte, resolução, FPS e bitrate podem ser alteradas durante a transmissão, sem que os espectadores precisem se reconectar.
+
+### 👀 Assistir às transmissões
+
+- As transmissões disponíveis aparecem na lista de participantes.
+- Clique em **Assistir** para visualizar uma transmissão.
+- O vídeo só é enviado para quem escolhe assistir, evitando tráfego desnecessário.
+- Cada transmissão suporta até 5 espectadores simultâneos.
+- É possível assistir a várias transmissões ao mesmo tempo.
+- Controles de volume, ping e interrupção da visualização aparecem ao passar o mouse sobre o vídeo.
+- Clique duas vezes no vídeo para entrar em tela cheia.
+
+### 🔊 Áudio do sistema
+
+O ScreenLink transmite somente o áudio do sistema. **O microfone nunca é capturado.**
+
+O comportamento depende da fonte selecionada:
+
+- **Tela inteira:** transmite o áudio geral do sistema.
+- **Aplicativo específico:** transmite somente o áudio daquele aplicativo, deixando outros programas, como o Discord, de fora.
+
+Isso permite manter a conversa por voz no Discord sem que o áudio da chamada seja incluído na transmissão.
+
+### ⚡ Codec automático e aceleração por hardware
+
+Ao iniciar, o ScreenLink detecta os recursos disponíveis no computador e seleciona automaticamente o codec mais adequado.
+
+São aproveitadas as tecnologias de aceleração por hardware:
+
+- NVIDIA NVENC
+- AMD AMF/VCN
+- Intel Quick Sync
+
+A ordem de preferência é:
+
+1. AV1
+2. H.265 (HEVC)
+3. H.264
+4. VP9
+
+Caso não exista aceleração por hardware disponível, o programa utiliza H.264 por software.
+
+A seleção também considera a capacidade de decodificação dos computadores que recebem a transmissão, buscando evitar telas pretas e consumo excessivo de processamento.
+
+Na página de ajustes, você pode visualizar os codecs detectados e o tipo de aceleração disponível. Exemplo:
+
+`AV1: hardware | H265: hardware | H264: hardware`
+
+### 🔄 Atualização automática
+
+O ScreenLink verifica automaticamente se existem novas versões disponíveis.
+
+Quando uma atualização é encontrada:
+
+1. O programa baixa a nova versão em segundo plano.
+2. Uma notificação aparece no canto da tela.
+3. Basta clicar em **Reiniciar e atualizar**.
+
+Caso prefira, a atualização também pode ser aplicada automaticamente ao fechar o programa.
+
 ---
-Requisitos
-Windows 11, ou Windows 10 versão 2004 ou superior, build 20348 ou mais recente (necessário para capturar o som de um aplicativo específico).
-Internet. Para transmitir, o upload de quem transmite importa (veja a tabela abaixo).
-Não precisa de conta, cadastro ou instalação de outros programas.
-Quanto de upload é preciso (para quem transmite)
-Cada espectador recebe um fluxo próprio. Valores aproximados a 60 FPS:
-Resolução	Bitrate sugerido	1 espectador	5 espectadores
-1080p	6 a 8 Mbps	8 Mbps	40 Mbps
-720p	3 a 5 Mbps	5 Mbps	25 Mbps
-480p e menores	1 a 2 Mbps	2 Mbps	10 Mbps
-Se a sua internet não aguentar, reduza o bitrate, a resolução ou o FPS na página de ajustes.
+
+## 💻 Requisitos do sistema
+
+- Windows 11; ou Windows 10 versão 2004 ou superior.
+- Build 20348 ou mais recente para captura de áudio de aplicativos específicos.
+- Conexão com a internet.
+
+Não é necessário criar uma conta, fazer cadastro ou instalar outros programas.
+
+### 📶 Requisitos de upload
+
+Cada espectador recebe um fluxo de vídeo independente. Portanto, quanto mais pessoas assistirem à sua transmissão, maior será o consumo de upload.
+
+Valores aproximados para transmissões a 60 FPS:
+
+| Resolução | Bitrate sugerido | 1 espectador | 5 espectadores |
+|---|---:|---:|---:|
+| 1080p | 6–8 Mbps | 8 Mbps | 40 Mbps |
+| 720p | 3–5 Mbps | 5 Mbps | 25 Mbps |
+| 480p ou inferior | 1–2 Mbps | 2 Mbps | 10 Mbps |
+
+Os valores são estimativas. O consumo real depende das configurações utilizadas.
+
+Se sua conexão não suportar a transmissão, reduza o bitrate, a resolução ou o FPS.
+
 ---
-Como usar
-Criar uma sala
-Abra o ScreenLink e digite seu nome.
-Clique em Criar nova sala.
-Clique em Copiar código e envie para os amigos pelo Discord.
-Entrar em uma sala
-Digite seu nome e o código de 5 caracteres.
-Clique em Entrar na sala.
-Transmitir
-Dentro da sala, clique em Compartilhar tela.
-Escolha a fonte, a resolução, o FPS e o bitrate. Deixe o codec em Automático.
-Clique em Iniciar transmissão. Para parar, clique em Parar transmissão.
-Assistir
-Clique em Assistir ao lado do nome de quem está transmitindo.
-Passe o mouse sobre o vídeo para ver volume, ping e o botão de parar.
+
+## 🚀 Como usar
+
+### 1. Criar uma sala
+
+1. Abra o ScreenLink.
+2. Digite seu nome.
+3. Clique em **Criar nova sala**.
+4. Clique em **Copiar código**.
+5. Envie o código de 5 caracteres para seus amigos pelo Discord.
+
+### 2. Entrar em uma sala
+
+1. Abra o ScreenLink.
+2. Digite seu nome.
+3. Informe o código da sala.
+4. Clique em **Entrar na sala**.
+
+### 3. Compartilhar sua tela
+
+1. Dentro da sala, clique em **Compartilhar tela**.
+2. Escolha a fonte da transmissão.
+3. Configure resolução, FPS e bitrate.
+4. Mantenha o codec em **Automático** (recomendado).
+5. Clique em **Iniciar transmissão**.
+
+Para encerrar, clique em **Parar transmissão**.
+
+### 4. Assistir à tela de alguém
+
+1. Localize o participante que está transmitindo.
+2. Clique em **Assistir** ao lado do nome.
+3. Passe o mouse sobre o vídeo para acessar os controles de volume, ping e visualização.
+
 ---
-Privacidade e segurança
-Vídeo, áudio e chat vão direto entre os participantes e são criptografados (WebRTC).
-Um servidor público gratuito (PeerJS) é usado só no começo, para os PCs se encontrarem. Ele não recebe vídeo, áudio nem mensagens do chat.
-Se a conexão direta entre dois PCs não for possível, o programa usa um servidor de apoio (relé), por onde o tráfego, ainda criptografado, passa. Nesse caso a qualidade pode cair.
-Quem sabe o código da sala pode entrar. Não publique o código em lugares abertos.
-O microfone nunca é acessado.
+
+## 🔒 Privacidade e segurança
+
+O ScreenLink utiliza comunicação P2P (peer-to-peer) através do WebRTC.
+
+- **Conexão direta:** vídeo, áudio e mensagens são enviados diretamente entre os participantes sempre que possível.
+- **Criptografia:** a comunicação é protegida pela criptografia do WebRTC.
+- **Servidor de sinalização:** o PeerJS é utilizado apenas inicialmente para que os computadores se encontrem e estabeleçam a conexão.
+- **Conexão via relé:** quando uma conexão direta não é possível, o programa utiliza um servidor de retransmissão. Nesse caso, o tráfego continua criptografado, mas a qualidade pode ser afetada.
+- **Sem captura de microfone:** o aplicativo nunca acessa o microfone.
+- **Sem cadastro:** não é necessário fornecer informações pessoais ou criar uma conta.
+
+> **Importante:** qualquer pessoa que conheça o código de uma sala pode tentar entrar. Compartilhe o código apenas com pessoas de confiança e evite publicá-lo em locais públicos.
+
 ---
-Limitações conhecidas
-Somente Windows.
-Sem conversa por voz. O ScreenLink é um complemento: use o Discord para falar.
-Sem histórico no chat. Quem entra depois não vê as mensagens anteriores, e o chat some ao sair da sala.
-Máximo de 1080p.
-Aplicativos da Microsoft Store (como Calculadora e Filmes e TV) podem ficar sem som ao compartilhar só o aplicativo.
-Jogos em tela cheia exclusiva podem aparecer pretos. Use o modo "Janela sem bordas" do jogo ou compartilhe a tela inteira.
-Janelas minimizadas não podem ser capturadas.
-Depende de um serviço público gratuito para as pessoas se encontrarem. Se ele ficar fora do ar, não é possível criar nem entrar em salas.
-Algumas redes (firewalls corporativos, por exemplo) podem impedir a conexão.
+
+## ⚠️ Limitações conhecidas
+
+- Disponível somente para Windows.
+- Não possui comunicação por voz. Utilize o Discord para conversar.
+- O chat não mantém histórico. Quem entra depois não visualiza mensagens anteriores, e as mensagens desaparecem quando a sala é encerrada.
+- Resolução máxima de 1080p.
+- Alguns aplicativos da Microsoft Store, como Calculadora e Filmes e TV, podem não transmitir áudio ao compartilhar somente a janela do aplicativo.
+- Jogos executados em tela cheia exclusiva podem apresentar tela preta. Prefira o modo **Janela sem bordas** ou compartilhe a tela inteira.
+- Janelas minimizadas não podem ser capturadas.
+- A criação e entrada em salas dependem de um serviço público gratuito de sinalização. Caso ele fique indisponível, não será possível estabelecer novas salas.
+- Algumas redes, especialmente aquelas com firewalls corporativos ou restrições de conexão P2P, podem impedir a comunicação entre participantes.
+
 ---
-Problemas comuns
-Problema	O que tentar
-"Sala não encontrada"	Confira o código e se quem criou a sala ainda está com o programa aberto
-"A sala existe, mas a conexão não completou"	A rede ou o firewall está bloqueando. Tente de novo ou use outra rede
-Imagem travando ou com baixa qualidade	Reduza o bitrate, a resolução ou o FPS
-Sem som na transmissão	Veja se há som tocando e se o dispositivo de saída padrão do Windows está correto
-Codec automático não detectou hardware	Na página de ajustes, clique em Detectar hardware de novo
-Tela preta ao compartilhar um jogo	Use o modo janela sem bordas ou compartilhe a tela inteira
+
+## 🛠️ Solução de problemas
+
+| Problema | O que fazer |
+|---|---|
+| Sala não encontrada | Confira o código e verifique se quem criou a sala ainda está com o programa aberto. |
+| A sala existe, mas a conexão não foi concluída | A rede ou o firewall pode estar bloqueando a conexão. Tente novamente ou utilize outra rede. |
+| Imagem travando ou com baixa qualidade | Reduza o bitrate, a resolução ou o FPS. |
+| Transmissão sem som | Verifique se existe áudio sendo reproduzido e se o dispositivo de saída padrão do Windows está configurado corretamente. |
+| Codec automático não detectou o hardware | Abra a página de ajustes e clique em **Detectar hardware** novamente. |
+| Tela preta ao compartilhar um jogo | Utilize o modo Janela sem bordas ou compartilhe a tela inteira. |
+
 ---
-Tecnologias
-Aplicativo feito com Electron, comunicação em tempo real com WebRTC (via PeerJS) e um auxiliar nativo para captura de áudio do Windows (WASAPI).
+
+## 🧰 Tecnologias utilizadas
+
+- **Electron:** estrutura do aplicativo desktop.
+- **WebRTC:** comunicação em tempo real entre participantes.
+- **PeerJS:** sinalização e estabelecimento das conexões P2P.
+- **WASAPI:** captura de áudio do sistema operacional Windows.
+- **Codecs de vídeo:** AV1, H.265, H.264 e VP9, com suporte à aceleração por hardware quando disponível.
+
 ---
-Versões
-Todas as versões e o histórico estão na página de Releases.
+
+## 🎯 Objetivo do projeto
+
+O ScreenLink foi criado para oferecer uma alternativa simples e eficiente ao compartilhamento de tela tradicional em chamadas do Discord.
+
+A proposta é separar a comunicação por voz da transmissão de vídeo, permitindo que cada ferramenta faça aquilo para o qual foi projetada.
+
+**Converse pelo Discord. Compartilhe pelo ScreenLink.**
